@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Postre Sublime</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilos.css">
+        <style>
+
+
+            #tienda, #logoUbi {
+                width: 100%;
+                max-width: 800px;
+                display: block;
+                margin: 10px auto;
+            }
+
+            #ubi {
+                margin-top: 20px;
+                padding: 20px;
+                background-color: lightpink;
+                text-align: center;
+            }
+
+            #logoUbi {
+                width: 80%;
+                max-width: 240px;
+                display: block;
+                margin: 20px auto;
+            }
+
+            #pieFoto {
+                font-size: 20px;
+                color: black;
+                text-align: center;
+            }
+
+            @media (max-width: 768px) {
+                h1 {
+                    font-size: 24px;
+                }
+
+                .pag {
+                    font-size: 16px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header id="top">
+            <div class="logo_titulo">
+                <img src="Logo.png" alt="Logo" width="120" height="120">
+                <h1>Postre Sublime</h1>
+            </div>
+            <nav>
+                <ul class="navegacion">
+                    <li class="pag"><a href="index.html">Inicio</a></li>
+                    <li class="pag"><a href="pedidos.html">Pedidos</a></li>
+                    <li class="pag"><a href="catalogo.html">Catálogo</a></li>
+                    <li class="pag"><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <article>
+                <img src="postres2.jpg" alt="postres" style="width: 100%; height: auto;">
+                <div style="margin: 20px 0;">
+                    <h2>¡Bienvenido a Postre Sublime!</h2>
+                    <p>Fundada en 2004 por <em>Mei Torres</em>, nuestra pastelería nació de una profunda pasión por los postres y los dulces. Como una repostería familiar, cada creación que ofrecemos está basada en recetas transmitidas de generación en generación, cuidando hasta el último detalle para brindarte la mejor experiencia dulce. Desde tartas exquisitas hasta delicados pasteles, todos nuestros productos están elaborados con ingredientes frescos y de la más alta calidad, asegurando un sabor casero inigualable.</p>
+                    <p>Ubicada en el corazón de <strong>Bilbao</strong>, en la Gran Vía, Postre Sublime es un rincón donde lo tradicional y lo sofisticado se encuentran. Aquí no encontrarás pan, sino una exclusiva selección de postres artesanales que rinden homenaje a la tradición familiar. Te invitamos a disfrutar de nuestras delicias, cada una preparada con el mismo cariño y dedicación que la fundadora puso en su primera creación. ¡Gracias por visitarnos y bienvenido a nuestro dulce mundo!</p>
+                </div>
+
+                <img src="2004.png" alt="2004" id="tienda">
+                <div id="ubi">
+                    <p><strong>Ubicación: </strong><br>Gran Vía 25, Bilbao</p>
+                </div>
+                <img src="Logo.png" alt="logo" id="logoUbi">
+                <p id="pieFoto">Inauguración de Postre Sublime, 2004</p>
+            </article>
+        </main>
+
+        <a href="#top" id="botonArriba"> ↑</a>
+
+        <hr>
+        <footer>
+            <p id="derechos">Copyright 2004 Postre Sublime | Todos los derechos reservados</p>
+        </footer>
+    </body>
+</html>

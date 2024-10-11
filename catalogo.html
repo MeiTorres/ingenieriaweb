@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Postre Sublime</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+
+        .tabla_postres {
+            width: 90%; 
+            max-width: 800px; 
+            margin: 50px auto;
+            border-collapse: collapse;
+            text-align: center;
+            font-size: 18px; 
+        }
+
+        .tabla_postres th, .tabla_postres td {
+            border: 1px solid #ccc; 
+            padding: 8px; 
+        }
+
+        .tabla_postres th {
+            background-color: lightpink;
+            color: white;
+            font-size: 24px; 
+        }
+
+        .tabla_postres td {
+            background-color: #f9f9f9;
+            font-size: 20px; 
+        }
+
+        .tabla_postres img {
+            border-radius: 8px;
+            max-width: 100px; 
+            height: auto; 
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px; 
+            }
+
+            .pag {
+                font-size: 16px; 
+            }
+
+            .tabla_postres {
+                font-size: 16px; 
+            }
+
+            .tabla_postres th {
+                font-size: 20px; 
+            }
+
+            .tabla_postres td {
+                font-size: 18px; 
+            }
+
+            .tabla_postres img {
+                max-width: 80px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <div class="logo_titulo">
+            <img src="Logo.png" alt="Logo" width="120" height="120">
+            <h1>Postre Sublime</h1>
+        </div>
+        <nav>
+            <ul class="navegacion">
+                <li class="pag"><a href="index.html">Inicio</a></li>
+                <li class="pag"><a href="pedidos.html">Pedidos</a></li>
+                <li class="pag"><a href="catalogo.html">Catálogo</a></li>
+                <li class="pag"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <table class="tabla_postres">
+            <tr>
+                <th>Postre</th>
+                <th>Imagen</th>
+                <th>Alérgenos</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Tarta de chocolate</td>
+                <td><img src="choco.jpg" alt="choco"></td>
+                <td>Gluten, lactosa y huevos</td>
+                <td>30€</td>
+            </tr>
+            <tr>
+                <td>Pastel de queso</td>
+                <td><img src="queso.jpg" alt="queso"></td>
+                <td>Lactosa y huevos</td>
+                <td>35€</td>
+            </tr>
+            <tr>
+                <td>Cupcakes</td>
+                <td><img src="cupcakes.jpg" alt="cupcakes"></td>
+                <td>Lactosa y huevos</td>
+                <td>18€</td>
+            </tr>
+            <tr>
+                <td>Macarons</td>
+                <td><img src="macarons.jpg" alt="macarons"></td>
+                <td>Lactosa y huevos</td>
+                <td>15€</td>
+            </tr>
+        </table>
+    </main>
+
+    <a href="#top" id="botonArriba"> ↑</a>
+
+    <hr>
+    <footer>
+        <p id="derechos">Copyright 2004 Postre Sublime | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>

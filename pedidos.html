@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Postre Sublime</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <style>
+       
+        form {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        fieldset {
+            border: 2px solid lightpink;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        legend {
+            font-size: 24px;
+            font-weight: bold;
+            color: skyblue;
+        }
+
+        label {
+            font-size: 22px;
+        }
+
+        input[type="submit"] {
+            background-color: lightpink;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+
+        input[type="submit"]:hover {
+            background-color: hotpink;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            .pag {
+                font-size: 16px;
+            }
+
+            form {
+                padding: 10px; 
+            }
+
+            label {
+                font-size: 18px; 
+            }
+
+            input[type="submit"] {
+                font-size: 18px; 
+            }
+
+            textarea {
+                width: 100%; 
+                resize: vertical; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="top">
+        <div class="logo_titulo">
+            <img src="Logo.png" alt="Logo" width="120" height="120">
+            <h1>Postre Sublime</h1>
+        </div>
+        <nav>
+            <ul class="navegacion">
+                <li class="pag"><a href="index.html">Inicio</a></li>
+                <li class="pag"><a href="pedidos.html">Pedidos</a></li>
+                <li class="pag"><a href="catalogo.html">Catálogo</a></li>
+                <li class="pag"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2 style="text-align: center; padding: 20px;">Encarga tus postres aquí :) </h2>
+
+        <form action="procesar_pedido.php" method="post">
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required><br><br>
+
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" pattern="[0-9]{9}" placeholder="123456789" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            </fieldset>
+
+            <fieldset>
+                <legend>Detalles del Pedido</legend>
+
+                <label for="postre">Postre:</label>
+                <select id="postre" name="postre" required>
+                    <option value="" disabled selected>Seleccione un postre</option>
+                    <option value="tarta_chocolate">Tarta de Chocolate</option>
+                    <option value="pastel_queso">Pastel de Queso</option>
+                    <option value="cupcakes">Cupcakes</option>
+                    <option value="macarons">Macarons</option>
+                </select><br><br>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" name="cantidad" min="0" max="10" value="0" required><br><br>
+
+                <label for="fecha">Fecha de Entrega:</label>
+                <input type="date" id="fecha" name="fecha" required><br><br>
+
+                <label>Alérgenos (selecciona si aplica):</label><br><br>
+
+                <input type="checkbox" id="gluten" name="alergenos" value="gluten">
+                <label for="gluten">Gluten</label><br>
+
+                <input type="checkbox" id="lactosa" name="alergenos" value="lactosa">
+                <label for="lactosa">Lactosa</label><br>
+
+                <input type="checkbox" id="huevos" name="alergenos" value="huevos">
+                <label for="huevos">Huevos</label><br>
+
+                <input type="checkbox" id="frutos_secos" name="alergenos" value="frutos_secos">
+                <label for="frutos_secos">Frutos Secos</label><br><br>
+
+                <label for="comentarios">Comentarios:</label><br><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Añade algún comentario o instrucción especial"></textarea><br><br>
+            </fieldset>
+
+            <input type="submit" value="Enviar Pedido">
+        </form>
+    </main>
+
+    <a href="#top" id="botonArriba"> ↑</a>
+
+    <hr>
+    <footer>
+        <p id="derechos">Copyright 2004 Postre Sublime | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
